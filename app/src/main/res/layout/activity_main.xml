@@ -7,13 +7,49 @@
     tools:context=".MainActivity">
 
     <TextView
+        android:id="@+id/title"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Hello World!"
+        android:text="My Bookings"
+        android:textColor="@color/white"
+        android:textSize="22dp"
+        android:textStyle="bold"
         app:fontFamily="@font/jakarta"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.054" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="222dp"
+        android:layout_height="221dp"
+        android:src="@drawable/ic_empty"
+        tools:layout_editor_absoluteX="94dp"
+        tools:layout_editor_absoluteY="232dp"></ImageView>
+
+    <TextView
+        android:id="@+id/sub_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/imageView"
+        android:text="You have not Booking yet"
+        android:textColor="@color/white"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        app:fontFamily="@font/jakarta"
+        tools:layout_editor_absoluteX="94dp"
+        tools:layout_editor_absoluteY="471dp" />
+
+    <TextView
+        android:id="@+id/texte"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="lorem isfdqsfdsfdsfqdsfdsqfdsqfqsdfdsqfdsfpum"
+        android:textColor="@color/light_grey"
+        tools:layout_editor_absoluteX="52dp"
+        tools:layout_editor_absoluteY="514dp"></TextView>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
